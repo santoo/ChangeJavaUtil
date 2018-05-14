@@ -21,10 +21,8 @@ public class TextFileUtility {
                textFile = new TextFile();
                String[] line=scanner.nextLine().split("##");
                 textFile.setJavaFileName(line[0].trim());
-                textFile.setModuleName(line[1].trim());
-                textFile.setSubModuleName(line[2].trim());
-                textFile.setLineNumber(Long.valueOf(line[3].trim()));
-                textFile.setMessage(line[4].trim());
+                textFile.setLineNumber(Long.valueOf(line[1].trim()));
+                textFile.setMessage(line[2].trim());
                 parsedTextList.add(textFile);
            }
 
